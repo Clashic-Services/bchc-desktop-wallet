@@ -13,6 +13,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: autogen
+      run: ./autogen.sh
+    - name: goto depends
+      run: cd depends/
+    - name: configure depends
+      run: cd ./configure
+    - name: make depends
+      run: cd make
+    - name: go back
+      run: cd ./..
     - name: configure
       run: ./configure
     - name: make
