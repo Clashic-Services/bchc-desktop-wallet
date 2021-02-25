@@ -13,17 +13,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: autogen
-      run: ./autogen.sh
-    - name: goto depends
-      run: cd depends
+
     - name: make depends
       run: make
-    - name: go back
-      run: cd ./..
+      working-directory: ./depends
 
+    - name: autogen
+      run: ./autogen.sh
     - name: configure
-      run: ./configure
+      run: CONFIG_SITE=$PWD/depends/x86_64-pc-linux-gnu/share/config.site ./configure --prefix=/
     - name: make
       run: make
     - name: make check
