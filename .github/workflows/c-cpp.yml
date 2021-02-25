@@ -16,11 +16,12 @@ jobs:
     - name: autogen
       run: ./autogen.sh
     - name: goto depends
-      run: cd depends/
+      run: cd depends
     - name: make depends
-      run: make download
+      run: make
     - name: go back
       run: cd ./..
+
     - name: configure
       run: ./configure
     - name: make
