@@ -1,3 +1,4 @@
+[![C/C++ CI (Linux Ubuntu 18.04.5)](https://github.com/Clashic-Services/bchc-desktop-wallet/actions/workflows/c-cpp.yml/badge.svg?branch=master)]
 Bitcoin Clashic
 ===============
 
