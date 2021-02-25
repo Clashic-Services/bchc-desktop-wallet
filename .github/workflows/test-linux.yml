@@ -1,4 +1,4 @@
-name: Linux Latest Ubuntu
+name: Test Latest Ubuntu
 
 on:
   push:
