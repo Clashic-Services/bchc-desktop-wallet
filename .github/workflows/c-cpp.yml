@@ -18,9 +18,9 @@ jobs:
     - name: goto depends
       run: cd depends/
     - name: configure depends
-      run: cd ./configure
+      run: ./configure
     - name: make depends
-      run: cd make
+      run: make
     - name: go back
       run: cd ./..
     - name: configure
