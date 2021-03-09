@@ -1,3 +1,5 @@
+[![Latest Ubuntu](https://github.com/Clashic-Services/bchc-desktop-wallet/actions/workflows/test-linux.yml/badge.svg)](https://github.com/Clashic-Services/bchc-desktop-wallet/actions/workflows/test-linux.yml)
+
 Bitcoin Clashic
 ===============
 
